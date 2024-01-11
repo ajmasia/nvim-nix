@@ -14,25 +14,26 @@
 
   outputs = { nixpkgs, nixvim, flake-parts, ... } @ inputs:
     flake-parts.lib.mkFlake { inherit inputs; } {
-
       systems = [ "aarch64-linux" "x86_64-linux" "aarch64-darwin" "x86_64-darwin" ];
 
       perSystem = { self, system, pkgs, ... }:
         let
           nixvim' = nixvim.legacyPackages.${system};
+
           default' = nixvim'.makeNixvimWithModule {
             inherit pkgs;
-            module = ./modules/default.nix;
+            module = ./module/default.nix;
           };
-          rolling = nixvim'.makeNixvimWithModule {
+
+          rolling' = nixvim'.makeNixvimWithModule {
             inherit pkgs;
-            module = ./modules/rolling.nix;
+            module = ./module/rolling.nix;
           };
         in
         {
           packages = rec {
             default = default';
-            rolling = rolling;
+            rolling = rolling';
           };
         };
     };
