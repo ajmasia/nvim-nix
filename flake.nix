@@ -16,7 +16,7 @@
     flake-parts.lib.mkFlake { inherit inputs; } {
       systems = [ "aarch64-linux" "x86_64-linux" "aarch64-darwin" "x86_64-darwin" ];
 
-      perSystem = { self, system, pkgs, ... }:
+      perSystem = { self', system, pkgs, ... }:
         let
           nixvim' = nixvim.legacyPackages.${system};
 
@@ -34,6 +34,14 @@
           packages = rec {
             default = default';
             rolling = rolling';
+          };
+          devShells = {
+            buildInputs = with pkgs; [
+              ripgrep
+              fzf
+              fd
+              lazygit
+            ];
           };
         };
     };
