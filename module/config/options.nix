@@ -17,8 +17,8 @@
     relativenumber = true;
     numberwidth = 2;
 
-    tabstop = 4;
-    shiftwidth = 4;
+    tabstop = 2;
+    shiftwidth = 2;
     softtabstop = 0;
     expandtab = true;
     autoindent = true;
