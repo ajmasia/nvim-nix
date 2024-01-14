@@ -10,6 +10,26 @@ in
     ${commands'}
   '';
 
+  keymaps = [
+    {
+      action = "<cmd>lua vim.lsp.buf.code_action()<CR>";
+      key = "<leader>ca";
+      mode = [ "n" "v" ];
+      options = {
+        desc = "Code Actions";
+      };
+    }
+
+    {
+      action = "<cmd>Format<CR>";
+      key = "<leader>cf";
+      mode = [ "n" "v" ];
+      options = {
+        desc = "Conform Format";
+      };
+    }
+  ];
+
   plugins = {
     lsp = {
       enable = true;
