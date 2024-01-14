@@ -38,12 +38,6 @@ require("dashboard").setup({
 				action = "checkhealth",
 				key = "h",
 			},
-			{
-				desc = " Config",
-				group = "@property",
-				action = "e ~/.dotfiles/home/ajmasia/programs/neovim/default.nix",
-				key = "c",
-			},
 		},
 		mru = {},
 		footer = function()
