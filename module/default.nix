@@ -17,7 +17,5 @@
     ./ui/whichkey
     ./ui/tree
     ./ui/fidget
-
-    ./extra/copilot
   ];
 }

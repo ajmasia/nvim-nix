@@ -21,6 +21,7 @@
         };
       };
     };
+
     treesitter = {
       grammarPackages = with config.plugins.treesitter.package.builtGrammars; [
         javascript
