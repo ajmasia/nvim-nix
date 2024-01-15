@@ -10,6 +10,7 @@
     ./lang/yaml.nix
     ./lang/html.nix
     ./lang/css.nix
+    ./lang/python.nix
 
     ./ui/themes/catppuccin.nix
     ./ui/dashboard
