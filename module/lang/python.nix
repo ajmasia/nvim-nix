@@ -32,7 +32,7 @@
     };
 
     treesitter = {
-      grammarPackages = with config.programs.nixvim.plugins.treesitter.package.builtGrammars; [
+      grammarPackages = with config.plugins.treesitter.package.builtGrammars; [
         python
       ];
     };
