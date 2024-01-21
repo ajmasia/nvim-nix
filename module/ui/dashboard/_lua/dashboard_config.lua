@@ -42,7 +42,7 @@ require("dashboard").setup({
 		mru = {},
 		footer = function()
 			-- local currentConfig = "" .. os.getenv("MYVIMRC")
-			local currentConfig = "Using Nixvim"
+			local currentConfig = "Wellcome to Neovim Nix"
 			local nvimVersion =
 				string.format("Using Neovim v%d.%d.%d", vim.version().major, vim.version().minor, vim.version().patch)
 
