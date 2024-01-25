@@ -2,6 +2,9 @@
 
 local ts_repeat_move = require("nvim-treesitter.textobjects.repeatable_move")
 
+-- use markdown highlight for mdx files
+vim.treesitter.language.register("markdown", "mdx")
+
 -- vim way: ; goes to the direction you were moving.
 vim.keymap.set({ "n", "x", "o" }, ";", ts_repeat_move.repeat_last_move)
 vim.keymap.set({ "n", "x", "o" }, ",", ts_repeat_move.repeat_last_move_opposite)

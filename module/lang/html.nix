@@ -21,6 +21,22 @@
       };
     };
 
+    lsp.servers.emmet_ls = {
+      enable = true;
+
+      filetypes = [
+        "css"
+        "html"
+        "javascript"
+        "javascriptreact"
+        "typescript"
+        "typescriptreact"
+        "sass"
+        "scss"
+        "less"
+      ];
+    };
+
     treesitter = {
       grammarPackages = with config.plugins.treesitter.package.builtGrammars; [
         html

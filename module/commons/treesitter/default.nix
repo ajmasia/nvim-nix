@@ -9,8 +9,19 @@ in
       enable = true;
 
       indent = true;
+      folding = true;
+
+      # enable treesitter injection for lua content in nix files
       nixvimInjections = true;
-      grammarPackages = with config.plugins.treesitter.package.builtGrammars; [ c vim vimdoc ];
+
+      grammarPackages = with config.plugins.treesitter.package.builtGrammars; [
+        c
+        vim
+        vimdoc
+        markdown
+        markdown_inline
+        query
+      ];
     };
 
     treesitter-context.enable = true;

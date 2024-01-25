@@ -6,6 +6,10 @@
       enable = true;
     };
 
+    lsp.servers.tailwindcss = {
+      enable = true;
+    };
+
     conform-nvim = {
       formattersByFt = {
         css = [ "prettierd" ];

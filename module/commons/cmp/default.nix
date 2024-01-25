@@ -25,6 +25,10 @@ in
       enable = true;
     };
 
+    luasnip = {
+      enable = true;
+    };
+
     nvim-cmp = {
       enable = true;
 
@@ -42,7 +46,9 @@ in
         format = '' ${cmp-icons} '';
       };
 
-      snippet = { };
+      snippet = {
+        expand = "luasnip";
+      };
 
       window = {
         completion = {

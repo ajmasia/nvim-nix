@@ -11,6 +11,7 @@
     ./lang/html.nix
     ./lang/css.nix
     ./lang/python.nix
+    ./lang/prisma.nix
 
     ./ui/themes/catppuccin.nix
     ./ui/dashboard
