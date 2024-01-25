@@ -1,8 +1,6 @@
 {
-  programs.nixvim = {
-    filetype = {
-      extension = { mdx = "mdx"; };
-    };
+  filetype = {
+    extension = { mdx = "mdx"; };
   };
 }
 
