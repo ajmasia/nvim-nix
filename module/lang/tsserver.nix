@@ -26,6 +26,7 @@
       grammarPackages = with config.plugins.treesitter.package.builtGrammars; [
         javascript
         typescript
+        tsx
       ];
     };
 
