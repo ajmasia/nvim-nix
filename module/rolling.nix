@@ -21,6 +21,7 @@
     ./ui/fidget
 
     ./extra/copilot
+    ./extra/obsidian
   ];
 }
 
