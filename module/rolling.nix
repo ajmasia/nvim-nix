@@ -22,6 +22,7 @@
 
     ./extra/copilot
     ./extra/obsidian
+    ./extra/markdown-preview
   ];
 }
 
