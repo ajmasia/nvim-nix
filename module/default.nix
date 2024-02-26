@@ -13,7 +13,7 @@
     ./lang/python.nix
     ./lang/prisma.nix
 
-    ./ui/themes/tokyonight.nix
+    ./ui/themes/catppuccin.nix
     ./ui/dashboard
     ./ui/lualine
     ./ui/whichkey
