@@ -30,6 +30,8 @@
     updatetime = 100;
     timeout = true;
     timeoutlen = 300;
+
+    undofile = true;
   };
 }
 
