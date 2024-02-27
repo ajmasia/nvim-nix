@@ -8,22 +8,22 @@
       # Find files using Telescope command-line sugar.
       "<leader>/" = {
         action = "live_grep";
-        desc = "Grep (root)";
+        desc = "Grep (cwd)";
       };
 
       "<leader><space>" = {
         action = "find_files";
-        desc = "Files (root)";
+        desc = "Files (cwd)";
       };
 
       "<leader>ff" = {
         action = "find_files";
-        desc = "Files (root)";
+        desc = "Files (cwd)";
       };
 
       "<leader>sg" = {
         action = "live_grep";
-        desc = "Grep (root)";
+        desc = "Grep (cwd)";
       };
 
       "<leader>fb" = {
@@ -38,7 +38,7 @@
 
       "<leader>fr" = {
         action = "oldfiles";
-        desc = "Recent Files (root)";
+        desc = "Recent Files (cwd)";
       };
 
       "<leader>sf" = {

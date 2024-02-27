@@ -1,4 +1,4 @@
-{pkgs, ...}:
+{ pkgs, ... }:
 
 {
   imports = [
@@ -39,8 +39,11 @@
     nvim-colorizer.enable = true;
     nvim-colorizer.userDefaultOptions.names = false;
 
-    project-nvim.enable = true;
-    project-nvim.manualMode = false;
+    project-nvim = {
+      enable = true;
+
+      manualMode = true;
+    };
   };
 }
 

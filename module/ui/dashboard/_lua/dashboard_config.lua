@@ -1,4 +1,6 @@
 ---@diagnostic disable: undefined-global
+require("telescope").load_extension("projects")
+
 local logo = "01101110 01100101 01101111 01110110 01101001 01101101"
 logo = string.rep("\n", 8) .. logo .. "\n\n"
 
