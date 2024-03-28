@@ -5,29 +5,13 @@ in
 
 {
   plugins = {
-    cmp-buffer = {
-      enable = true;
-    };
+    cmp-buffer.enable = true;
+    cmp-emoji.enable = true;
+    cmp-nvim-lsp.enable = true;
+    cmp-path.enable = true;
+    cmp_luasnip.enable = true;
 
-    cmp-emoji = {
-      enable = true;
-    };
-
-    cmp-nvim-lsp = {
-      enable = true;
-    };
-
-    cmp-path = {
-      enable = true;
-    };
-
-    cmp_luasnip = {
-      enable = true;
-    };
-
-    luasnip = {
-      enable = true;
-    };
+    luasnip.enable = true;
 
     nvim-cmp = {
       enable = true;
@@ -63,6 +47,7 @@ in
 
       mappingPresets = [ "insert" ];
 
+      # TODO: review mappings for better workflow
       mapping = {
         "<CR>" = "cmp.mapping.confirm({ select = true })";
         "<C-n>" = "cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert })";
@@ -79,12 +64,6 @@ in
             cmp.abort()
             fallback()
           end";
-      };
-
-      experimental = {
-        ghost_text = {
-          hl_group = "CmpGhostText";
-        };
       };
     };
   };
